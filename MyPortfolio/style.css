@@ -1,0 +1,206 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+ul {
+    margin-top: 22px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.main-img {
+    display: inline-block;
+
+}
+.content{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+}
+
+.info{
+    line-height: 70px;
+    margin-top: 10%;
+    font-size: 30px;
+    
+}
+
+.info h1{
+    font-size: 60px;
+    margin-top: 20px;
+    line-height: 85px;
+}
+
+.name{
+    color: #ff004f;
+}
+
+.College{
+    color: rgb(0, 106, 255);
+}
+
+.info p{
+    text-decoration: underline #ff00516d;
+    text-underline-offset: 30px;
+}
+/* --------------------personal info---------------------- */
+
+.personal-info{
+    /* margin-top: 200px; */
+    padding: 100px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pinfo-col-1{
+flex-basis: 35%;
+}
+
+.pinfo-col-1 img{
+width: 100%;
+border-radius: 15px;
+}
+.pinfo-col-2{
+    flex-basis: 50%;
+}
+.pinfo-col-2 p{
+    margin-top: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    text-align: left;
+    padding: 8px;
+  }
+
+table li{
+    line-height: 30px;
+
+}
+
+table #soft li{
+    line-height: 70.5px;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #ff004f;
+
+}
+
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(0, 255, 255);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.7s;
+
+}
+.tab-link.active-link::after{
+    width: 100%;
+}
+.tab-contents table tr td ul li span{
+    color: rgb(6, 161, 161);
+    font-size: 18px;
+}
+li{
+    list-style: none;
+}
+.tab-contents{
+    display:none;
+}
+
+.tab-contents li{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.tab-contents img{
+    margin-top: 35px;
+}
+.tab-contents ul li span{
+    color: rgb(6, 161, 161);
+}
+
+#setting{
+    padding: 8px;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}

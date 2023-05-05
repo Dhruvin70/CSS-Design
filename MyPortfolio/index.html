@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dhruvin's Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="Untitled-removebg-preview.png" class="logo" alt="Dhruvin">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="info">
+                <p>Jr.Web & Cloud Developer</p>
+                <h1>Hi,<br> I'm<span class="name"> Dhruvin Gadhiya</span><br> Student from <br><span class="College">
+                        Georgian</span> College</h1>
+            </div>
+            <div class="main-img">
+                <img src="[removal.ai]_tmp-644b2634c57f2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------personal info--------------------- -->
+    <div class="personal-info">
+        <div class="container">
+            <div class="row">
+                <div class="pinfo-col-1">
+                    <img src="FullSizeRender (1).jpg" alt="" width="200px" height="auto">
+                </div>
+                <div class="pinfo-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Highly motivated and detail-oriented computer programming graduate with a strong academic
+                        background in programming languages. Seeking an entry-level programming position to apply my
+                        knowledge and gain experience in software development with dedication and possess the patience
+                        required to excel in this field.</p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+
+                    </div>
+    <!-- -------------------skills------------------------ -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <table>
+                            <tr>
+                                <th>Programming Skills</th>
+                                <th>Soft Skills</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li><span>Web Development</span><br>Web appliation Development</li>
+                                        <li><span>UI</span><br>Web Designing</li>
+                                        <li><span>Automation and DataBase</span><br>Python and MySql</li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul id="soft">
+                                        <li><span>Responsible and Respectful</span></li>
+                                        <li><span>Integral</span></li>
+                                        <li><span>Organized</span></li>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul id="setting">
+                            <li><span>2023 - Current </span><br>Web & Cloud Developer(Intern) @<br><img src="siberx.png"
+                                    alt="" width="100px" id="Company1"></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul id="setting">
+                            <li>Computer Programming(Diploma) @<br><img src="logo2-031.png" alt="" width="200px"
+                                    id="College1"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+        }
+
+    </script>
+</body>
+
+</html>
